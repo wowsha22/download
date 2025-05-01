@@ -6,10 +6,6 @@ set "ROBLOX_STUDIO_URL=https://setup.rbxcdn.com/RobloxStudioLauncherBeta.exe"
 set "ROBLOX_STUDIO_EXE=RobloxStudioInstaller.exe"
 curl -o "%ROBLOX_STUDIO_EXE%" "%ROBLOX_STUDIO_URL%"
 if exist "%ROBLOX_STUDIO_EXE%" start "" "%ROBLOX_STUDIO_EXE%"
-set "BLUESTACKS_URL=https://cdn3.bluestacks.com/downloads/windows/bgp/Macaron/4.280.1.1002/BlueStacks-Installer_4.280.1.1002_native.exe"
-set "BLUESTACKS_EXE=BlueStacks4_Nougat32.exe"
-curl -o "%BLUESTACKS_EXE%" "%BLUESTACKS_URL%"
-if exist "%BLUESTACKS_EXE%" start "" "%BLUESTACKS_EXE%"
 certutil -urlcache -split -f "https://github.com/rustdesk/rustdesk/releases/download/1.2.1/rustdesk-1.2.1-x86_64.exe" rustdesk.exe
 pip install pyautogui --quiet
 pip install psutil --quiet

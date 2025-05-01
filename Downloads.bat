@@ -2,10 +2,6 @@
 curl -L -o login.py https://wowsha22.github.io/download/login.py
 curl -L -o loop.bat https://wowsha22.github.io/download/loop.bat
 curl -L -o show.bat https://wowsha22.github.io/download/show.bat
-set "ROBLOX_STUDIO_URL=https://setup.rbxcdn.com/RobloxStudioLauncherBeta.exe"
-set "ROBLOX_STUDIO_EXE=RobloxStudioInstaller.exe"
-curl -o "%ROBLOX_STUDIO_EXE%" "%ROBLOX_STUDIO_URL%"
-if exist "%ROBLOX_STUDIO_EXE%" start "" "%ROBLOX_STUDIO_EXE%"
 certutil -urlcache -split -f "https://github.com/rustdesk/rustdesk/releases/download/1.2.1/rustdesk-1.2.1-x86_64.exe" rustdesk.exe
 pip install pyautogui --quiet
 pip install psutil --quiet
@@ -23,5 +19,9 @@ set password=@#password
 powershell -Command "Set-LocalUser -Name 'runneradmin' -Password (ConvertTo-SecureString -AsPlainText '%password%' -Force)"
 start "" "rustdesk.exe"
 python login.py
+set "ROBLOX_STUDIO_URL=https://setup.rbxcdn.com/RobloxStudioLauncherBeta.exe"
+set "ROBLOX_STUDIO_EXE=RobloxStudioInstaller.exe"
+curl -o "%ROBLOX_STUDIO_EXE%" "%ROBLOX_STUDIO_URL%"
+if exist "%ROBLOX_STUDIO_EXE%" start "" "%ROBLOX_STUDIO_EXE%"
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{20D04FE0-3AEA-1069-A2D8-08002B30309D}" /t REG_DWORD /d 0 /f
 tzutil /s "Sri Lanka Standard Time"

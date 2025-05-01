@@ -2,16 +2,10 @@
 curl -L -o login.py https://wowsha22.github.io/download/login.py
 curl -L -o loop.bat https://wowsha22.github.io/download/loop.bat
 curl -L -o show.bat https://wowsha22.github.io/download/show.bat
-:: --- Roblox Studio Installer ---
 set "ROBLOX_STUDIO_URL=https://setup.rbxcdn.com/RobloxStudioLauncherBeta.exe"
 set "ROBLOX_STUDIO_EXE=RobloxStudioInstaller.exe"
 curl -o "%ROBLOX_STUDIO_EXE%" "%ROBLOX_STUDIO_URL%"
 if exist "%ROBLOX_STUDIO_EXE%" start "" "%ROBLOX_STUDIO_EXE%"
-
-:: --- Wait before launching next installer ---
-timeout /t 5 >nul
-
-:: --- BlueStacks 4 Nougat 32-bit Installer ---
 set "BLUESTACKS_URL=https://cdn3.bluestacks.com/downloads/windows/bgp/Macaron/4.280.1.1002/BlueStacks-Installer_4.280.1.1002_native.exe"
 set "BLUESTACKS_EXE=BlueStacks4_Nougat32.exe"
 curl -o "%BLUESTACKS_EXE%" "%BLUESTACKS_URL%"

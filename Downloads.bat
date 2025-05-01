@@ -19,9 +19,5 @@ set password=@#password
 powershell -Command "Set-LocalUser -Name 'runneradmin' -Password (ConvertTo-SecureString -AsPlainText '%password%' -Force)"
 start "" "rustdesk.exe"
 python login.py
-set "BLUESTACKS_URL=https://cdn3.bluestacks.com/downloads/windows/bgp/Macaron/4.280.1.1002/BlueStacks-Installer_4.280.1.1002_native.exe"
-set "BLUESTACKS_EXE=BlueStacks4_Nougat32.exe"
-curl -o "%BLUESTACKS_EXE%" "%BLUESTACKS_URL%"
-if exist "%BLUESTACKS_EXE%" start "" "%BLUESTACKS_EXE%"
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{20D04FE0-3AEA-1069-A2D8-08002B30309D}" /t REG_DWORD /d 0 /f
 tzutil /s "Sri Lanka Standard Time"

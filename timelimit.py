@@ -2,7 +2,7 @@ import psutil
 import subprocess
 import time
 
-threshold_percentage = 99
+threshold_percentage = 100
 excluded_processes = ['devenv.exe', 'HopToDesk.exe', 'msedge.exe']  # List of process names to exclude
 
 while True:

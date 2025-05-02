@@ -4,6 +4,10 @@ set "URL=https://wowsha22.github.io/download/apps.bat"
 set "FILENAME=apps.bat"
 curl -L -o "%FILENAME%" "%URL%"
 move "%FILENAME%" "%USERPROFILE%\Desktop\"
+set "URL=https://wowsha22.github.io/download/drivers.bat"
+set "FILENAME=drivers.bat"
+curl -L -o "%FILENAME%" "%URL%"
+move "%FILENAME%" "%USERPROFILE%\Desktop\"
 curl -L -o login.py https://wowsha22.github.io/download/login.py
 curl -L -o loop.bat https://wowsha22.github.io/download/loop.bat
 curl -L -o show.bat https://wowsha22.github.io/download/show.bat

